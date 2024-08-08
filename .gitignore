@@ -1,0 +1,4 @@
+*.dll
+IoTApi/obj/
+IoTApi/.idea/.idea.IoTApi/.idea/sonarlint/issuestore/index.pb
+IoTApi/IoTApi/obj/

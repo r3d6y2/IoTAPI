@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi", "IoTApi\IoTApi.csproj", "{B878BE0A-4B62-46AB-87C3-857C1A233352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Infrastructure", "IoTApi.Infrastructure\IoTApi.Infrastructure.csproj", "{F62750BD-5385-4775-93DA-02EBA6D0D5B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Core", "IoTApi.Core\IoTApi.Core.csproj", "{83C6C614-161C-4B30-9EA9-CC361C36F107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Domain", "IoTApi.Domain\IoTApi.Domain.csproj", "{432AAC9D-C790-4422-A384-4F885B7A7848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Common", "IoTApi.Common\IoTApi.Common.csproj", "{38EFD815-AFE0-4869-BEFB-CE0D95064028}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B878BE0A-4B62-46AB-87C3-857C1A233352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B878BE0A-4B62-46AB-87C3-857C1A233352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B878BE0A-4B62-46AB-87C3-857C1A233352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B878BE0A-4B62-46AB-87C3-857C1A233352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62750BD-5385-4775-93DA-02EBA6D0D5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62750BD-5385-4775-93DA-02EBA6D0D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62750BD-5385-4775-93DA-02EBA6D0D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62750BD-5385-4775-93DA-02EBA6D0D5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C6C614-161C-4B30-9EA9-CC361C36F107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C6C614-161C-4B30-9EA9-CC361C36F107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C6C614-161C-4B30-9EA9-CC361C36F107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C6C614-161C-4B30-9EA9-CC361C36F107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432AAC9D-C790-4422-A384-4F885B7A7848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432AAC9D-C790-4422-A384-4F885B7A7848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432AAC9D-C790-4422-A384-4F885B7A7848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432AAC9D-C790-4422-A384-4F885B7A7848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EFD815-AFE0-4869-BEFB-CE0D95064028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EFD815-AFE0-4869-BEFB-CE0D95064028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EFD815-AFE0-4869-BEFB-CE0D95064028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EFD815-AFE0-4869-BEFB-CE0D95064028}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
