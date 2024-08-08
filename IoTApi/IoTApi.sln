@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Domain", "IoTApi.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTApi.Common", "IoTApi.Common\IoTApi.Common.csproj", "{38EFD815-AFE0-4869-BEFB-CE0D95064028}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helm", "helm", "{8A409E9D-E789-41E9-B20E-425932F058F0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,45 +1,71 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
 using IoTApi.Core.Dtos;
 using IoTApi.Core.Interfaces;
+using IoTApi.Domain.Entities;
+using IoTApi.Domain.Interfaces;
 
 namespace IoTApi.Core.Services;
 
 public class DeviceService : IDeviceService
 {
-    public Task<DeviceDto> Create(DeviceDto device)
+    private readonly IDeviceRepository _deviceRepository;
+    private readonly IMapper _mapper;
+
+    public DeviceService(IDeviceRepository deviceRepository, IMapper mapper)
     {
-        throw new NotImplementedException();
+        _deviceRepository = deviceRepository;
+        _mapper = mapper;
+    }
+    
+    public async Task<DeviceDto> Create(DeviceDto device)
+    {
+        var deviceEntity = _mapper.Map<Device>(device);
+
+        var createdDevice = await _deviceRepository.Create(deviceEntity);
+
+        return _mapper.Map<DeviceDto>(createdDevice);
     }
 
-    public Task<DeviceDto> Update(DeviceDto device)
+    public async Task<DeviceDto> Update(DeviceDto device)
     {
-        throw new NotImplementedException();
+        var deviceEntity = _mapper.Map<Device>(device);
+
+        var updatedDevice = await _deviceRepository.Update(deviceEntity);
+
+        return _mapper.Map<DeviceDto>(updatedDevice);
     }
 
-    public Task Delete(string deviceId)
+    public async Task Delete(string deviceId)
     {
-        throw new NotImplementedException();
+        await _deviceRepository.Delete(deviceId);
     }
 
-    public Task Delete(long id)
+    public async Task Delete(long id)
     {
-        throw new NotImplementedException();
+        await _deviceRepository.Delete(id);
     }
 
-    public Task<IEnumerable<DeviceDto>> GetAll()
+    public async Task<IEnumerable<DeviceDto>> GetAll()
     {
-        throw new NotImplementedException();
+        var devices = await _deviceRepository.GetAll();
+
+        return _mapper.Map<IEnumerable<DeviceDto>>(devices);
     }
 
-    public Task<DeviceDto> Get(string deviceId)
+    public async Task<DeviceDto> Get(string deviceId)
     {
-        throw new NotImplementedException();
+        var device = await _deviceRepository.Get(deviceId);
+
+        return _mapper.Map<DeviceDto>(device);
     }
 
-    public Task<DeviceDto> Get(long id)
+    public async Task<DeviceDto> Get(long id)
     {
-        throw new NotImplementedException();
+        var device = await _deviceRepository.Get(id);
+
+        return _mapper.Map<DeviceDto>(device);
     }
 }

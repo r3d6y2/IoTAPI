@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  mywebapi:
+    image: mywebapi:latest
+    build:
+      context: .
+      dockerfile: IoTApi/Dockerfile
+    ports:
+      - "5312:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Data Source=127.0.0.1,1434;Initial Catalog=IOT;Integrated Security=False;User Id=IoTAdmin;Password=R3d6yf431dn$;TrustServerCertificate=True
